@@ -20,6 +20,12 @@ export function getIdeas() {
     .then((ideas) => ideas);
 }
 
+export function getParams(param) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get(param);
+}
+
 export async function loadTemplate(path) {
   const html = await fetch(path).then(convertToText);
   const template = document.createElement("template");
