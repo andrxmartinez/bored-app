@@ -1,4 +1,5 @@
 import { loadHeaderFooter } from "./utils.js";
+import { getParams } from "./utils.js";
 loadHeaderFooter();
 
 export default class CategoryDetails {
@@ -8,6 +9,10 @@ export default class CategoryDetails {
 
   init() {
     const activities = document.getElementById("activities");
+    const title = document.getElementById("title");
+
+    const param = getParams("category").toUpperCase();
+    title.innerHTML = this.renderTitle(param);
     this.ideas.forEach((idea) => {
       const ideaElement = this.renderCategoryIdea(idea);
       activities.innerHTML += ideaElement;
@@ -16,5 +21,9 @@ export default class CategoryDetails {
 
   renderCategoryIdea(idea) {
     return `<span>${idea.name}</span>`;
+  }
+
+  renderTitle(title) {
+    return `<h1>${title}</h1>`;
   }
 }
