@@ -20,7 +20,10 @@ export default class CategoryDetails {
   }
 
   renderCategoryIdea(idea) {
-    return `<span>${idea.name}</span>`;
+    return `<label>
+    <input type="checkbox" name="${idea.name}" />
+    <span>${idea.name}</span>
+    </label>`;
   }
 
   renderTitle(title) {
