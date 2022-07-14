@@ -19,6 +19,12 @@ const getData = async () => {
 
   const category = new CategoryDetails(categoryArray);
 
+  function randomize() {
+    const randomNumber = Math.floor(Math.random() * categoryArray.length);
+    document.getElementById("selected").innerHTML = categoryArray[randomNumber].name;
+  }
+  document.getElementById("randomAll").addEventListener("click", randomize);
+
   category.init();
 };
 getData();
