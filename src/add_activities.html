@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boringless Website | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/category.js" type="module"></script>
+  </head>
+  <header id="main-header"></header>
+  <body>
+    <main>
+      <h1>Add activities to categories below</h1>
+      <form>
+        <div class="sect_space">
+        <label>Category:</label>
+        <select name="category" id="category" required="required">
+            <option disabled selected value>Select a category</option>
+            <option value="Dates">Dates</option>
+            <option value="Social">Social</option>
+            <option value="Education">Education</option>
+            <option value="Relax">Relax</option>
+          </select>
+        </div>
+        <div class="sect_space">
+            <label>Name:</label>
+            <input type="text" required="required">
+        </div>
+        <div class="sect_space">
+        <label>Description:</label>
+        <textarea name="Description" id="Description" cols="15" rows="3" placeholder="Enter a brief descrition of the activity">
+
+        </textarea>
+        </div>
+        <div class="sect_space">
+        <label>Cost:</label>
+        <input type="text">
+        </div>
+        <div class="sect_space">
+        <label>Inside:</label>
+        <select name="Inside" id="Inside" required="required">
+            <option disabled selected value></option>
+            <option value="True">True</option>
+            <option value="False">False</option>
+          </select>
+        </div>
+        <div class="sect_space">
+        <label>location:</label>
+        <input type="text">
+        </div>
+        <div class="sect_space">
+        <label>Participants:</label>
+        <input type="text">
+        </div>
+        <div class="sect_space">
+        <label>Requirement:</label>
+        <input type="text">
+        </div>
+        
+        
+        
+        <button type="submit" id="Submit" value="Submit">Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer id="main-footer"></footer>
+</html>

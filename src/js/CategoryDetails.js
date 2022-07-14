@@ -16,6 +16,7 @@ export default class CategoryDetails {
     this.ideas.forEach((idea) => {
       const ideaElement = this.renderCategoryIdea(idea);
       activities.innerHTML += ideaElement;
+      console.log(idea)
     });
   }
 

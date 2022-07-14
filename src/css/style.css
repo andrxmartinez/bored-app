@@ -8,6 +8,7 @@
   background-color: #f5f5f5;
 }
 /* HOME PAGE */
+
 #main-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,7 +21,9 @@
   max-width: 100%;
   padding-left: 50px;
 }
-
+h1,form,#Submit{
+  margin: 0.6em;
+}
 .logo-container img {
   border-radius: 30px 45px;
 }
@@ -154,7 +157,29 @@ button {
   font-size: 40px;
 }
 
-input {
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+  
+}
+.sect_space{
+  display: flex;
+  flex-direction: column;
+}
+input[type= 'text'],select,textarea{
+  border-color: 000000;
+  border-radius: none;
+  height: 1.5rem;
+  width: 10rem;
+  border-width: 2px;
+  font-size: 1rem;
+  box-shadow: 1px 3px #d8d7d7;
+  margin-left: 0.6em;
+}
+
+input[type= 'checkbox'] {
   display: none;
 }
 
