@@ -162,11 +162,15 @@ form{
   flex-direction: column;
   justify-content: center;
   gap: 0.5em;
+  align-items: center;
+  justify-content: center;
   
 }
 .sect_space{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 input[type= 'text'],select,textarea{
   border-color: 000000;
@@ -251,6 +255,13 @@ label span:after {
   justify-content: center;
 }
 
+
+#hor2 {
+  width: 30vw;
+  background: black;
+  height: 1px;
+  color: black;
+}
 #hor {
   width: 20vw;
   background: black;
