@@ -172,7 +172,7 @@ form{
   align-items: center;
   justify-content: center;
 }
-input[type= 'text'],select,textarea{
+input[type= 'text'],input[type= 'number'],select,textarea{
   border-color: 000000;
   border-radius: none;
   height: 1.5rem;
