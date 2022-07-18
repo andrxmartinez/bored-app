@@ -40,4 +40,16 @@ export async function loadHeaderFooter() {
   const footerElement = document.getElementById("main-footer");
   renderWithTemplate(header, headerElement);
   renderWithTemplate(footer, footerElement);
+  document.querySelector(".loginbtn").addEventListener('click',login);
+}
+
+// login function would possibly work but back-end isnt getting us to where we need to be.
+function login() {
+  console.log("her2e");
+  const loginObject = createCORSRequest("GET", "https://cse341boredapi.herokuapp.com/login/");
+  localStorage.setItem("authTocken", loginObject.response_type);
+  debugger;
+  if (!loginObject) {
+    console.log("CORS not supported");
+  }
 }
